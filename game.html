@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>守护核心 - 徐老师赛博纪念馆</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        #game-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 30px;
+        }
+        #game-canvas {
+            background-color: #000;
+            border: 2px solid var(--border-color);
+        }
+        .game-info {
+            font-family: var(--title-font);
+            color: var(--text-color);
+            font-size: 1.2em;
+            margin-top: 15px;
+            text-align: center;
+        }
+        .game-info span {
+            color: var(--highlight-color);
+        }
+        /* 游戏结束/胜利弹窗 */
+        #game-modal {
+            display: none; /* 默认隐藏 */
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(26, 26, 26, 0.9);
+            border: 1px solid var(--text-color);
+            padding: 30px;
+            text-align: center;
+            z-index: 2000;
+            box-shadow: 0 0 20px var(--highlight-color);
+        }
+        #modal-title {
+            font-family: var(--title-font);
+            font-size: 1.8em;
+            color: var(--warning-color);
+            margin-bottom: 15px;
+        }
+        #modal-message {
+            font-size: 1.1em;
+            margin-bottom: 25px;
+        }
+    </style>
+</head>
+<body>
+    <header class="main-header">
+        <div class="logo glitch-title">徐老师纪念馆</div>
+        <nav>
+            <a href="index.html">主页</a>
+            <a href="gallery.html">出土文物</a>
+            <a href="quiz.html">徐学考试</a>
+            <a href="game.html" class="active">守护核心</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1 class="page-title">//: 3CM 守护者</h1>
+        <p class="page-intro">一项伟大的事业，需要你的守护。移动挡板，接住象征核心科技的宝贵数据！</p>
+        
+        <div id="game-container" class="terminal-block">
+            <canvas id="game-canvas" width="800" height="600"></canvas>
+            <div class="game-info">
+                得分: <span id="score">0</span> | 生命: <span id="lives">3</span>
+            </div>
+            <!-- 游戏结束/胜利弹窗 -->
+            <div id="game-modal">
+                <h2 id="modal-title"></h2>
+                <p id="modal-message"></p>
+                <a href="#" id="restart-button" class="btn">重新开始</a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="main-footer">
+        <p>&copy; 2024 徐老师关爱协会 | 最终解释权归全体兄弟所有</p>
+    </footer>
+    <script src="js/game.js"></script>
+</body>
+</html>
