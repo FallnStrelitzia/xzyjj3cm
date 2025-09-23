@@ -3,230 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>【重要指示】关于徐老师的赛博神格认证</title>
-    <style>
-        /* 
-         * CSS部分：主打一个复古、故障、阴阳怪气的美学
-         * 灵感来源：90年代个人主页、Windows 95、赛博朋克、屎山代码
-         */
-        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-
-        :root {
-            --bg-color: #0d0d0d; /* 令人安心的纯黑 */
-            --text-color: #00ff00; /* 经典骇客绿 */
-            --highlight-color: #ff00ff; /* 骚气冲天的品红 */
-            --warning-color: #ff3c3c; /* 警告！警告！ */
-            --border-color: #00ffff; /* 赛博蓝 */
-        }
-
-        body {
-            background-color: var(--bg-color);
-            color: var(--text-color);
-            font-family: 'Courier New', Courier, monospace; /* 程序员狂喜字体 */
-            line-height: 1.6;
-            background-image:
-                linear-gradient(rgba(0, 255, 0, 0.05) 1px, transparent 1px),
-                linear-gradient(90deg, rgba(0, 255, 0, 0.05) 1px, transparent 1px);
-            background-size: 20px 20px;
-            animation: flicker 0.1s infinite alternate; /* 屏幕闪烁，保护视力（bushi）*/
-        }
-
-        /* 梦回90年代的跑马灯，谁用谁知道 */
-        marquee {
-            background-color: var(--highlight-color);
-            color: #ffff00;
-            font-size: 1.2em;
-            font-weight: bold;
-            padding: 5px;
-            border: 2px solid var(--text-color);
-        }
-
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 15px;
-            border: 3px dotted var(--border-color);
-            box-shadow: 0 0 20px var(--border-color);
-        }
-
-        /* 标题：主打一个故障艺术（Glitch Art） */
-        .glitch-title {
-            font-family: 'Press Start 2P', cursive; /* 像素游戏字体，味儿对了 */
-            font-size: 2.5em;
-            text-align: center;
-            color: var(--text-color);
-            text-shadow: 
-                -2px -2px 0 var(--highlight-color),
-                2px 2px 0 var(--border-color);
-            animation: glitch 1s infinite;
-            margin-bottom: 20px;
-        }
-
-        h2 {
-            font-family: 'Press Start 2P', cursive;
-            color: var(--highlight-color);
-            text-align: center;
-            border-bottom: 2px dashed var(--text-color);
-            padding-bottom: 10px;
-            margin-top: 40px;
-        }
-
-        /* 内容区块：模仿老旧终端的样式 */
-        .terminal-block {
-            background-color: #1a1a1a;
-            border: 1px solid var(--text-color);
-            padding: 20px;
-            margin-bottom: 20px;
-            box-shadow: inset 0 0 10px #000;
-            white-space: pre-wrap; /* 保留空格和换行，适合放代码和ASCII艺术 */
-            word-wrap: break-word;
-        }
-
-        .terminal-block strong {
-            color: var(--highlight-color);
-            font-weight: normal; /* 在monospace下，bold不好看 */
-        }
-
-        /* 核心数据展示区 */
-        .specs-list {
-            list-style-type: none;
-            padding: 0;
-        }
-        .specs-list li {
-            margin-bottom: 10px;
-        }
-        .specs-list .key {
-            color: var(--border-color);
-            display: inline-block;
-            width: 150px; /* 对齐 */
-        }
-        /* ！！！高亮核心数据！！！ */
-        .critical-data {
-            color: var(--warning-color);
-            font-size: 1.5em;
-            font-weight: bold;
-            animation: blink 0.5s infinite; /* 闪烁，加强警示 */
-            background-color: #330000;
-            padding: 2px 5px;
-        }
-
-        /* 语录区：阴阳怪气专用 */
-        blockquote {
-            background-color: #222;
-            border-left: 5px solid var(--highlight-color);
-            padding: 15px;
-            margin: 20px 0;
-            font-style: italic;
-        }
-        blockquote footer {
-            text-align: right;
-            font-style: normal;
-            color: var(--border-color);
-            margin-top: 10px;
-        }
-
-        /* 页脚：升华主题（或者说拉满嘲讽） */
-        .footer {
-            text-align: center;
-            margin-top: 50px;
-            font-size: 0.8em;
-            color: #888;
-        }
-        .footer a {
-            color: var(--border-color);
-            text-decoration: none;
-        }
-        .footer a:hover {
-            text-decoration: underline;
-            color: var(--highlight-color);
-        }
-
-        /* 动画效果 */
-        @keyframes flicker {
-            from { opacity: 0.95; }
-            to { opacity: 1; }
-        }
-
-        @keyframes glitch {
-            2%, 64% { transform: translate(2px, 0) skew(0deg); }
-            4%, 60% { transform: translate(-2px, 0) skew(0deg); }
-            62% { transform: translate(0, 0) skew(5deg); }
-        }
-
-        @keyframes blink {
-            50% { opacity: 0; }
-        }
-    </style>
+    <title>徐老师赛博纪念馆 - 官方网站</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
 </head>
 <body>
-
-    <!-- 跑马灯，复古网页的灵魂 -->
-    <marquee behavior="scroll" direction="left">
-        紧急通知：全体目光向我看齐！正在播放关于《徐老师重要讲话》的珍贵录像...
-    </marquee>
+    <header class="main-header">
+        <div class="logo glitch-title">徐老师纪念馆</div>
+        <nav>
+            <a href="index.html" class="active">主页</a>
+            <a href="gallery.html">出土文物</a>
+            <a href="quiz.html">徐学考试</a>
+        </nav>
+    </header>
 
     <div class="container">
-        <header>
-            <h1 class="glitch-title">赛博神佛：徐老师</h1>
-        </header>
+        <div class="hero">
+            <h1>欢迎来到，<br>一个传奇的数字殿堂</h1>
+            <p class="subtitle">我们致力于研究、记录并传颂当代伟人——徐老师的非凡人生。</p>
+        </div>
 
-        <main>
-            <section id="specs">
-                <h2>//: 技术规格 (Technical_Specifications)</h2>
-                <div class="terminal-block">
-                    <ul class="specs-list">
-                        <li><span class="key">[型号]</span> : Xu-Mk-I (典藏版)</li>
-                        <li><span class="key">[处理器]</span> : 间歇性高速运转，大部分时间节能模式</li>
-                        <li><span class="key">[游戏战力]</span> : 5 (顺风局) / -5 (逆风局)</li>
-                        <li><span class="key">[吹牛模块]</span> : <strong>已超频，性能不稳定</strong></li>
-                        <li><span class="key">[饭量]</span> : 2 人份 (基础) / 5 人份 (抢食模式)</li>
-                        <li><span class="key">[核心尺寸]</span> : <span class="critical-data">3 cm</span> (经权威认证，误差±0mm)</li>
-                    </ul>
-                </div>
-            </section>
+        <section class="terminal-block">
+            <h2>//: 最新动态 (LATEST_NEWS)</h2>
+            <div class="news-ticker">
+                <p>> [重大突破] 研究证实，徐老师的核心尺寸已稳定在 <span class="critical-data">3cm</span>，为人类科学设定了新的基准。</p>
+                <p>> [游戏捷报] 徐老师昨日在游戏中以 0/10/1 的战绩，成功证明了“最佳第六人”战术的可行性。</p>
+                <p>> [官方辟谣] 针对“徐老师饭局从不买单”的传言，本馆声明：情况基本属实。</p>
+            </div>
+        </section>
 
-            <section id="quotes">
-                <h2>//: 徐门圣经 (Sacred_Texts)</h2>
-                <blockquote>
-                    <p>"这把我必C！你们躺好就行...（0-5后）...这英雄有问题，版本陷阱！"</p>
-                    <footer>— 《论甩锅的艺术》第一章</footer>
-                </blockquote>
-                <blockquote>
-                    <p>"不是，我跟你们说，这个事情的底层逻辑是...（开始长篇大论）"</p>
-                    <footer>— 《当他想装逼时》</footer>
-                </blockquote>
-                <blockquote>
-                    <p>"这顿我请...（结账时）...哎呀我手机没电了，谁先垫一下？"</p>
-                    <footer>— 《抠门の奥义》</footer>
-                </blockquote>
-            </section>
-
-            <section id="miracles">
-                <h2>//: 神迹展示 (Miracles_Showcase)</h2>
-                <div class="terminal-block">
-                    <strong>神迹一：反向预言</strong>
-                    <p>> 徐老师断言某支球队必胜，该球队离奇败北。此后被兄弟们奉为“赛博章鱼”，用于反向预测。</p>
-                    
-                    <strong>神迹二：饭局黑洞</strong>
-                    <p>> 任何饭局，只要徐老师在场，最后一块肉的归属将变得扑朔迷离，最终以超越光速的筷法进入其口中。</p>
-
-                    <strong>神迹三：三厘米的奇迹</strong>
-                    <p>> 凭借其惊人的核心配置，成功撬动了我们整个兄弟圈的笑点，为世界和平（指群内和谐）做出了不可磨灭的贡献。</p>
-                </div>
-            </section>
-        </main>
-
-        <footer class="footer">
-            <pre>
-  _   _   _   _   _   _   _   _   _  
- / \ / \ / \ / \ / \ / \ / \ / \ / \ 
-( 感 | 谢 | 徐 | 老 | 师 | 的 | 奉 | 献 )
- \_/ \_/ \_/ \_/ \_/ \_/ \_/ \_/ \_/ 
-            </pre>
-            <p>本页面由“徐老师关爱协会”荣誉出品</p>
-            <p>最终解释权归全体兄弟所有 | <a href="#" onclick="alert('想跑？没门！'); return false;">[举报滥用]</a></p>
-        </footer>
+        <section class="cta-section">
+            <h2>探索徐老师的宇宙</h2>
+            <p>准备好接受精神的洗礼了吗？深入了解这位行走人间的“神祇”。</p>
+            <div class="cta-buttons">
+                <a href="gallery.html" class="btn">观摩神迹 →</a>
+                <a href="quiz.html" class="btn btn-alt">挑战认知 →</a>
+            </div>
+        </section>
     </div>
 
+    <footer class="main-footer">
+        <p>&copy; 2024 徐老师关爱协会 | 最终解释权归全体兄弟所有</p>
+    </footer>
+    <script src="js/script.js"></script>
 </body>
 </html>
