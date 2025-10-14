@@ -4,7 +4,38 @@ document.addEventListener('DOMContentLoaded', () => {
     if (document.getElementById('quiz-container')) {
         setupQuiz();
     }
+    // 检查当前页面是否有每日圣言模块
+    if (document.getElementById('daily-quote')) {
+        setupDailyQuote();
+    }
 });
+
+// --- 每日圣言逻辑 ---
+const quotes = [
+    "这打野会不会玩？",
+    "我F键坏了，真的按不出来。",
+    "这英雄有问题，绝对是版本陷阱。",
+    "对面那谁谁谁，是不是开挂了？",
+    "我手机没电了，下次我来。",
+    "不是我的问题，是这个世界有问题。",
+    "稳住，我们能赢...（然后默默点下投降）",
+    "我的我的...（指着别人的屏幕）"
+];
+
+function setupDailyQuote() {
+    const quoteElement = document.getElementById('daily-quote');
+    const newQuoteBtn = document.getElementById('new-quote-btn');
+
+    if (quoteElement && newQuoteBtn) {
+        const randomIndex = Math.floor(Math.random() * quotes.length);
+        quoteElement.textContent = `“${quotes[randomIndex]}”`;
+
+        newQuoteBtn.addEventListener('click', () => {
+            const newRandomIndex = Math.floor(Math.random() * quotes.length);
+            quoteElement.textContent = `“${quotes[newRandomIndex]}”`;
+        });
+    }
+}
 
 // --- 徐学考试逻辑 ---
 const quizData = [

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>徐学考试 - 徐老师赛博纪念馆</title>
+    <title>危机应对模拟器 - 徐老师赛博纪念馆</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
 </head>
@@ -13,27 +13,30 @@
         <nav>
             <a href="index.html">主页</a>
             <a href="gallery.html">出土文物</a>
-            <a href="quiz.html" class="active">徐学考试</a>
+            <a href="quiz.html">徐学考试</a>
             <a href="game.html">守护核心</a>
-            <a href="simulator.html">危机模拟</a>
+            <a href="simulator.html" class="active">危机模拟</a>
             <a href="whack.html">拍掉黑锅</a>
             <a href="flappy.html">核心升空</a>
         </nav>
     </header>
 
     <div class="container">
-        <h1 class="page-title">//: 全国统一徐学水平摸底考试</h1>
-        <div id="quiz-container" class="terminal-block">
-            <!-- 问题将由JavaScript动态生成 -->
+        <h1 class="page-title">//: 危机应对模拟器</h1>
+        <p class="page-intro">面对突如其来的挑战，一个真正的“徐学家”会如何应对？证明你的觉悟吧。</p>
+        
+        <div id="simulator-container" class="terminal-block">
+            <!-- 模拟器内容将由JavaScript动态生成 -->
         </div>
-        <div id="quiz-result" class="terminal-block" style="display: none;">
+        
+        <div id="simulator-result" class="terminal-block" style="display: none;">
             <!-- 结果将由JavaScript动态生成 -->
         </div>
     </div>
 
     <footer class="main-footer">
-        <p>&copy; 2024 徐老师关爱协会 | 考试作弊者，核心尺寸减半</p>
+        <p>&copy; 2024 徐老师关爱协会 | 任何试图承担责任的行为都将被记录在案</p>
     </footer>
-    <script src="js/script.js"></script>
+    <script src="js/simulator.js"></script>
 </body>
 </html>

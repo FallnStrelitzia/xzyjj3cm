@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>拍掉黑锅 - 徐老师赛博纪念馆</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header class="main-header">
+        <div class="logo glitch-title">徐老师纪念馆</div>
+        <nav>
+            <a href="index.html">主页</a>
+            <a href="gallery.html">出土文物</a>
+            <a href="quiz.html">徐学考试</a>
+            <a href="game.html">守护核心</a>
+            <a href="simulator.html">危机模拟</a>
+            <a href="whack.html" class="active">拍掉黑锅</a>
+            <a href="flappy.html">核心升空</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1 class="page-title">//: 甩锅反应力大挑战</h1>
+        <p class="page-intro">锅，转瞬即逝。功，避之不及。证明你眼疾手快，能完美规避一切责任！</p>
+        
+        <div id="whack-game-container" class="terminal-block">
+            <div class="game-header">
+                <div class="info-box">关卡: <span id="level">1</span></div>
+                <div class="info-box">得分: <span id="score">0</span></div>
+                <div class="info-box">目标: <span id="target-score">10</span></div>
+                <div class="info-box">剩余时间: <span id="time-left">20</span>s</div>
+                <button id="start-button" class="btn">开始挑战</button>
+            </div>
+            <div class="game-grid">
+                <!-- 游戏格子将由JS动态生成 -->
+            </div>
+            <div id="game-over-message" style="display: none; text-align: center; margin-top: 20px;">
+                <h2 id="game-over-title"></h2>
+                <p id="game-over-text"></p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="main-footer">
+        <p>&copy; 2024 徐老师关爱协会 | 误拍功劳者，思想觉悟有待提高</p>
+    </footer>
+    <script src="js/whack.js"></script>
+</body>
+</html>

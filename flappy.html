@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>核心升空 - 徐老师赛博纪念馆</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header class="main-header">
+        <div class="logo glitch-title">徐老师纪念馆</div>
+        <nav>
+            <a href="index.html">主页</a>
+            <a href="gallery.html">出土文物</a>
+            <a href="quiz.html">徐学考试</a>
+            <a href="game.html">守护核心</a>
+            <a href="simulator.html">危机模拟</a>
+            <a href="whack.html">拍掉黑锅</a>
+            <a href="flappy.html" class="active">核心升空</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1 class="page-title">//: 核心升空计划</h1>
+        <p class="page-intro">点击鼠标，帮助“3cm核心”摆脱世俗的束缚，飞向超凡的境界！</p>
+        
+        <div id="flappy-game-container" class="terminal-block" style="text-align: center;">
+            <canvas id="game-canvas" width="400" height="600" style="background-color: #000; border: 2px solid var(--border-color);"></canvas>
+            <div id="start-screen" style="display: block;">
+                <h2>准备好见证奇迹了吗？</h2>
+                <button id="start-button" class="btn">启动引擎</button>
+            </div>
+            <div id="game-over-screen" style="display: none;">
+                <h2 id="game-over-title">挑战失败</h2>
+                <p id="game-over-text">你未能完成挑战。</p>
+                <p>本次得分: <span id="final-score">0</span> | 最高分: <span id="high-score">0</span></p>
+                <button id="restart-button" class="btn">再来一次</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="main-footer">
+        <p>&copy; 2024 徐老师关爱协会 | 每一次飞跃，都是对重力的蔑视</p>
+    </footer>
+    <script src="js/flappy.js"></script>
+</body>
+</html>
