@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>危机应对模拟器 - 徐老师赛博纪念馆</title>
+    <title>圣物匹配 - 徐老师赛博纪念馆</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
 </head>
@@ -15,31 +15,33 @@
             <a href="gallery.html">出土文物</a>
             <a href="quiz.html">徐学考试</a>
             <a href="game.html">守护核心</a>
-            <a href="simulator.html" class="active">危机模拟</a>
+            <a href="simulator.html">危机模拟</a>
             <a href="whack.html">拍掉黑锅</a>
             <a href="flappy.html">核心升空</a>
-            <a href="memory.html">圣物匹配</a>
+            <a href="memory.html" class="active">圣物匹配</a>
             <a href="adventure.html">甩锅者2049</a>
         </nav>
     </header>
 
     <div class="container">
-        <h1 class="page-title">//: 危机应对模拟器</h1>
-        <p class="page-intro">面对突如其来的挑战，一个真正的“徐学家”会如何应对？证明你的觉悟吧。</p>
+        <h1 class="page-title">//: 圣物记忆回廊</h1>
+        <p class="page-intro">只有对“徐学”了如指掌的真信徒，才能通过这场记忆的试炼。</p>
         
-        <div id="simulator-container" class="terminal-block">
-            <!-- 模拟器内容将由JavaScript动态生成 -->
-        </div>
-        
-        <div id="simulator-result" class="terminal-block" style="display: none;">
-            <!-- 结果将由JavaScript动态生成 -->
+        <div id="memory-game-container" class="terminal-block">
+            <div class="game-info-bar">
+                <span>步数: <span id="moves-counter">0</span></span>
+                <button id="reset-button" class="btn btn-alt">重置</button>
+            </div>
+            <div class="memory-grid">
+                <!-- 卡牌将由JS动态生成 -->
+            </div>
         </div>
     </div>
 
     <footer class="main-footer">
-        <p>&copy; 2024 徐老师关爱协会 | 任何试图承担责任的行为都将被记录在案</p>
+        <p>&copy; 2024 徐老师关爱协会 | 记忆力衰退是思想滑坡的前兆</p>
     </footer>
-    <script src="js/simulator.js"></script>
+    <script src="js/memory.js"></script>
     <script src="js/stickers.js"></script>
     <script src="js/sticker-injector.js"></script>
 </body>
